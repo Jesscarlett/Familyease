@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+
+.align-right {
+  float: right;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button w3-large">FamilyEase</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Service</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="/static/banner.png" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Le Catering</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Us</h1><br>
+      <p class="w3-large">FamilyEase - your trusted partner for a hassle-free life. Based in North Shore and proudly rooted in the Chatswood community, FamilyEase was founded by me, a Corporate IT Manager with a passion for helping others and a desire to venture into small business.</p>
+      <p class="w3-large"><strong>Our mission is simple: to bring ease and peace of mind to families in the neighborhood.</strong> We understand the challenges of managing a busy household, especially during the holidays. That’s why we’re here to take care of the little things, so you can focus on creating memories, whether you're traveling, relaxing, or celebrating with loved ones.</p>
+      <h5 class="w3-center w3-xlarge">Why trust us?</h5>
+      <p class="w3-large">
+        <span id="moreText" style="display: none;">
+          As a long-time Chatswood resident and a proud father of two beautiful daughters, I value community, family, and trust. With years of professional experience at one of the major banks, I’ve built my career on reliability and responsibility. These values are at the heart of everything we do. <strong>Let us be your friendly helping hand this holiday season. From minding your home to managing errands, we’re here to make your life easier.</strong>
+        </span>
+      </p>
+      <button id="readMoreBtn" class="w3-button w3-border w3-round w-right w3-margin-top" style="float: right;" >Read More</button>
+
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Our Service</h1><br>
+      <h4>Holiday 'Peace of Mind' Package ($99 for 2 weeks)</h4>
+      <p class="w3-large">1. Outdoor Maintenance</p>
+      <p class="w3-medium">We’ll water outdoor plants twice a week, clean driveways, collect your mail, and ensure the home looks occupied while you're away.</p>
+      <p class="w3-large">2. Waste and Recycling Management</p>
+      <p class="w3-medium">We’ll manage your garbage and recycling by taking bins out on collection days and bringing them back after they’re emptied.</p>
+      <p class="w3-large">3. Home Safety Checks</p>
+      <p class="w3-medium">Our team will inspect your home’s exterior, including windows and doors, for any issues and provide photo updates for peace of mind.</p>
+      <p class="w3-large">4. Delivery Management</p>
+      <p class="w3-medium">We’ll pick up your home deliveries and place them in a secure location as per your instructions.</p>
+      <p class="w3-large">5. Custom Errands</p>
+      <p class="w3-medium">Have a specific task in mind? Let us know, and we’ll assist with anything manageable within our abilities.</p>
+      <p class="w3-large">$129 for 3 weeks, $169 for 4 weeks</p>
+      <hr>
+      <h4>Custom Offering</h4>
+      <p class="w3-medium">Airport pick-up or drop-off from $100.</p>
+      <p class="w3-medium">Lawn mowing from $90.</p>
+      <p class="w3-medium">Travel planning. Free quote provided.</p>
+      <p class="w3-medium">Event and party assistance, eg run errands.</p>
+      <p class="w3-medium">Grocery shopping and delivery before you return from $50.</p>
+      <p class="w3-medium">Professional website development and hosting. Free quote provided.</p>
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+      <img src="/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>At FamilyEase, we're here to assist you with personalised services tailored to your needs. Whether it’s helping manage your household or taking care of the little details, we’re just a call or email away.</p>
+    <p>
+      <!-- Phone with Icon -->
+      <span style="display: flex; align-items: center; margin-bottom: 8px;">
+        <i class="fa fa-phone-square" style="margin-right: 8px;"></i> 0467 770 567 (whatsapp)
+      </span>
+    </p>
+    <p>
+      <!-- Email with Icon -->
+      <span style="display: flex; align-items: center;">
+        <i class="fa fa-envelope" style="margin-right: 8px;"></i> <a href="mailto:Andrew@familyease.com.au">Andrew@familyease.com.au</a>
+      </span>
+    </p>
+    <p>Feel free to reach out—we’re happy to discuss how we can make your life easier.</p>
+<!--    <form action="/action_page.php" target="_blank">-->
+<!--      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>-->
+<!--      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>-->
+<!--      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>-->
+<!--      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>-->
+<!--      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>-->
+<!--    </form>-->
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+
+<script>
+  const readMoreBtn = document.getElementById("readMoreBtn");
+  const moreText = document.getElementById("moreText");
+
+  readMoreBtn.addEventListener("click", function () {
+    if (moreText.style.display === "none") {
+      moreText.style.display = "inline";
+      readMoreBtn.textContent = "Read Less";
+    } else {
+      moreText.style.display = "none";
+      readMoreBtn.textContent = "Read More";
+    }
+  });
+
+  // Initial state: hide extra text
+  moreText.style.display = "none";
+</script>
+
+</body>
+</html>
