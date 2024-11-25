@@ -39,7 +39,19 @@
       <a href="#menu" class="w3-bar-item w3-button">Service</a>
       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </div>
+        <!-- Menu icon for small screens -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-right w3-button w3-xlarge w3-hide-medium w3-hide-large" onclick="w3_open()">
+      <i class="fas fa-bars"></i>
+    </a>
   </div>
+  <!-- Sidebar menu for small screens -->
+  <nav class="w3-sidebar w3-bar-block w3-green w3-animate-right w3-top w3-text-light-grey"
+       style="z-index:3;width:120px;display:none;right:0;" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Close</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-8">About</a>
+    <a href="#menu" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-8">Service</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-8">Contact</a>
+  </nav>
 </div>
 
 <!-- Header for large screens -->
@@ -129,13 +141,10 @@
       </span>
     </p>
     <p>Feel free to reach out—we’re happy to discuss how we can make your life easier.</p>
-<!--    <form action="/action_page.php" target="_blank">-->
-<!--      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>-->
-<!--      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>-->
-<!--      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>-->
-<!--      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>-->
-<!--      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>-->
-<!--    </form>-->
+
+    <div class="w3-col m6 w3-padding-large w3-hide-medium w3-hide-large">
+      <img src="/static/photo1.png" class="w3-round w3-image" alt="about us small" width="600" height="750">
+    </div>
   </div>
 
 <!-- End page content -->
@@ -163,6 +172,16 @@
 
   // Initial state: hide extra text
   moreText.style.display = "none";
+
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+
+
 </script>
 
 </body>
