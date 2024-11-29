@@ -95,16 +95,16 @@
     <div class="w3-col l6 w3-padding-large">
       <h2 class="w3-center">Our Service</h2><br>
       <h5>Holiday 'Peace of Mind' Package ($99 for 2 weeks)</h5>
-      <p class="w3-large">1. Outdoor Maintenance</p>
-      <p class="w3-medium">We’ll water outdoor plants twice a week, clean driveways, collect your mail, and ensure the home looks occupied while you're away.</p>
-      <p class="w3-large">2. Waste and Recycling Management</p>
-      <p class="w3-medium">We’ll manage your garbage and recycling by taking bins out on collection days and bringing them back after they’re emptied.</p>
-      <p class="w3-large">3. Home Safety Checks</p>
-      <p class="w3-medium">Our team will inspect your home’s exterior, including windows and doors, for any issues and provide photo updates for peace of mind.</p>
-      <p class="w3-large">4. Delivery Management</p>
-      <p class="w3-medium">We’ll pick up your home deliveries and place them in a secure location as per your instructions.</p>
-      <p class="w3-large">5. Custom Errands</p>
-      <p class="w3-medium">Have a specific task in mind? Let us know, and we’ll assist with anything manageable within our abilities.</p>
+<!--      <p class="w3-large">1. Outdoor Maintenance</p>-->
+      <p class="w3-medium"><strong>1. Outdoor Maintenance - </strong> We’ll water outdoor plants twice a week, clean driveways, collect your mail, and ensure the home looks occupied while you're away.</p>
+<!--      <p class="w3-large">2. Waste and Recycling Management</p>-->
+      <p class="w3-medium"><strong>2. Waste and Recycling Management - </strong> We’ll manage your garbage and recycling by taking bins out on collection days and bringing them back after they’re emptied.</p>
+<!--      <p class="w3-large">3. Home Safety Checks</p>-->
+      <p class="w3-medium"><strong>3. Home Safety Checks - </strong> Our team will inspect your home’s exterior, including windows and doors, for any issues and provide photo updates for peace of mind.</p>
+<!--      <p class="w3-large">4. Delivery Management</p>-->
+      <p class="w3-medium"><strong>4. Delivery Management - </strong> We’ll pick up your home deliveries and place them in a secure location as per your instructions.</p>
+<!--      <p class="w3-large">5. Custom Errands</p>-->
+      <p class="w3-medium"><strong>5. Custom Errands - </strong> Have a specific task in mind? Let us know, and we’ll assist with anything manageable within our abilities.</p>
       <p class="w3-large">$129 for 3 weeks, $169 for 4 weeks</p>
       <hr>
       <h4>Custom Offering</h4>
@@ -114,6 +114,12 @@
       <p class="w3-medium">Event and party assistance, eg run errands.</p>
       <p class="w3-medium">Grocery shopping and delivery before you return from $50.</p>
       <p class="w3-medium">Professional website development and hosting. Free quote provided.</p>
+      <p class="w3-large">
+        <span id="moreText2" style="display: none;">
+          Looking after Pets, elderly care, and health related care are out of our scope.
+        </span>
+      </p>
+      <button id="readMoreBtn2" class="w3-button w3-border w3-round w-right w3-margin-top" style="float: center;" >What we don't do?</button>
     </div>
 
     <div class="w3-col l6 w3-padding-large">
@@ -158,6 +164,8 @@
 <script>
   const readMoreBtn = document.getElementById("readMoreBtn");
   const moreText = document.getElementById("moreText");
+  const readMoreBtn2 = document.getElementById("readMoreBtn2");
+  const moreText2 = document.getElementById("moreText2");
 
   readMoreBtn.addEventListener("click", function () {
     if (moreText.style.display === "none") {
@@ -169,8 +177,19 @@
     }
   });
 
+    readMoreBtn2.addEventListener("click", function () {
+    if (moreText2.style.display === "none") {
+      moreText2.style.display = "inline";
+      readMoreBtn2.textContent = "What we don't do";
+    } else {
+      moreText2.style.display = "none";
+      readMoreBtn2.textContent = "What we don't do";
+    }
+  });
+
   // Initial state: hide extra text
   moreText.style.display = "none";
+  moreText2.style.display = "none";
 
   function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
